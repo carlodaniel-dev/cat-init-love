@@ -5,6 +5,7 @@ import Intro from './components/Intro'
 import DateTime from './components/DateTime'
 import Quiz from './components/Quiz'
 import Summary from './components/Summary'
+import Confirmation from './components/Confirmation'
 
 function App() {
   const [step, setStep] = useState<Step>('intro')
@@ -34,6 +35,7 @@ function App() {
       {step === 'datetime' && <DateTime onNext={handleFechaHora} />}
       {step === 'quiz' && <Quiz onComplete={handleQuizComplete} />}
       {step === 'summary' && resultado && <Summary dateData={dateData} resultado={resultado} onNext={() => setStep('confirmation')} />} 
+      {step === 'confirmation' && resultado && <Confirmation dateData={dateData} resultado={resultado} />}
     </div>
   )
 }

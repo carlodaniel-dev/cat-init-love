@@ -87,3 +87,13 @@ export const preguntas: Record<PreguntaId, Pregunta> = {
         ],
     },
 }
+
+// Etiquetas cortas para mostrar en la tarjeta final (las preguntas completas son muy largas)
+export const etiquetasCortas: Record<PreguntaId, string> = {
+    plan: 'Plan',
+    pelicula: 'Película',
+    comida: 'Comida',
+    caminata: 'Caminata',
+    sorpresa: 'Sorpresa',
+    despues: 'Después',
+}

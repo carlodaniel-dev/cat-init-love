@@ -38,6 +38,7 @@ function Summary({ dateData, resultado, onNext }: SummaryProps) {
             <div className="text-6xl">{resultado.emoji}</div>
 
             <h1 className="text-purple-400 text-2xl font-bold">{resultado.titulo}</h1>
+            <h1 className="text-purple-400 font-bold">Resumen de la Cita</h1>
 
             <img
                 src="/src/assets/memes/cat_result.webp"
@@ -71,7 +72,7 @@ function Summary({ dateData, resultado, onNext }: SummaryProps) {
                 onClick={onNext}
                 className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition"
             >
-                Confirmar cita →
+                Sellar nuestra cita ❤️
             </button>
         </div>
     )
