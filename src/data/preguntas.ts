@@ -78,7 +78,7 @@ export const preguntas: Record<PreguntaId, Pregunta> = {
         id: 'despues',
         titulo: '¿Qué hacemos después?',
         opciones: [
-            { texto: 'Seguimos platicando', puntos: { romantico: 1, tranquilo: 1 }, siguiente: 'fin' },
+            { texto: 'Platicar', puntos: { romantico: 1, tranquilo: 1 }, siguiente: 'fin' },
             { texto: 'Otra cita ya mismo', puntos: { aventurero: 2 }, siguiente: 'fin' },
             { texto: 'Ver qué sale', puntos: { tranquilo: 2 }, siguiente: 'fin' },
             { texto: 'Tú decides', puntos: { divertido: 2 }, siguiente: 'fin' },

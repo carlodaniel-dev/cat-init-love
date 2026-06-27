@@ -49,7 +49,7 @@ function Intro({ onSuccess }: IntroProps) {
     return (
         <div className="min-h-screen bg-black flex flex-col items-center justify-center font-mono px-6 text-center gap-6 relative overflow-hidden">
             <img
-                src="/src/assets/memes/cat_flower.png"
+                src="/src/assets/memes/cat_flower.webp"
                 alt="Gatito"
                 className="w-48 h-48 object-cover rounded-2xl border-2 border-purple-500"
             />

@@ -71,6 +71,10 @@ function Quiz({ onComplete }: QuizProps) {
                 </div>
             </div>
 
+            <img
+                src="/src/assets/memes/cat_plan.webp"
+                alt="Gatito"
+                className="w-48 h-48 object-cover rounded-2xl border-2 border-purple-500"
             />
 
             <h1 className="text-purple-400 text-2xl font-bold max-w-sm">
