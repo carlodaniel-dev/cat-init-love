@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import type { Step, DateData } from './types'
+import type { Step, DateData, QuizAnswers } from './types'
 
 import Intro from './components/Intro'
 import DateTime from './components/DateTime'
+import Quiz from './components/Quiz'
 
 function App() {
   const [step, setStep] = useState<Step>('intro')
@@ -18,11 +19,16 @@ function App() {
     setStep('quiz')
   }
 
+  const handleQuizComplete = (respuestas: QuizAnswers) => {
+    setDateData((prev) => ({ ...prev, respuestas }))
+    setStep('summary')
+  }
 
   return (
     <div className="min-h-screen bg-black">
       {step === 'intro' && <Intro onSuccess={() => setStep('datetime')} />}
       {step === 'datetime' && <DateTime onNext={handleFechaHora} />}
+      {step === 'quiz' && <Quiz onComplete={handleQuizComplete} />}
     </div>
   )
 }

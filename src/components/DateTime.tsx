@@ -14,7 +14,7 @@ const mensajesFecha = [
 const mensajesHora = [
     'A esa hora ya estaré listo',
     'Como ordenes, jefa',
-    'Hora confirmada en mi sistema',
+    'Hora confirmada en mi calendario',
 ]
 
 function elegirMensajeRandom(lista: string[]) {

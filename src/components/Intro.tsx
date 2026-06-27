@@ -13,7 +13,7 @@ function Intro({ onSuccess }: IntroProps) {
     const [isGone, setIsGone] = useState(false)
 
     const mensajesNo = [
-        'Error 404: opción "No" no encontrada',
+        'Error 404: opción "No" se escapó del servidor',
         'Intenta de nuevo, esa respuesta no existe en este universo',
         'El botón "No" se está escapando... síguelo si puedes',
         'Nivel de persistencia: alto. Respeto.',
