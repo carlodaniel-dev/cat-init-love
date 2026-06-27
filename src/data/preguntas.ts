@@ -36,6 +36,7 @@ export const preguntas: Record<PreguntaId, Pregunta> = {
             { texto: 'Terror', puntos: { aventurero: 2 }, siguiente: 'despues' },
             { texto: 'Acción', puntos: { aventurero: 1, divertido: 1 }, siguiente: 'despues' },
             { texto: 'Romance', puntos: { romantico: 2 }, siguiente: 'despues' },
+            { texto: 'Lo que sea', puntos: { romantico: 2 }, siguiente: 'despues' },
         ],
     },
 
